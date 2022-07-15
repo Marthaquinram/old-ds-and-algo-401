@@ -3,7 +3,7 @@
 
 
 ## Whiteboard Process
-![Array-Reverse](./array-reverse/Reverse-Array.jpg)
+![Array-Reverse](../assets/Reverse-Array.jpg)
 
 - [whiteboard-link-miro](https://miro.com/app/board/uXjVOmyLIeQ=/?share_link_id=281706561202)
 
