@@ -1,5 +1,10 @@
 import { Collection, display } from "./Collection";
 
+interface Node<T> {
+  item: T;
+  next: Node<T> | undefined;
+}
+
 export class LinkedList<T> implements Collection<T> {
   // TODO
   start: Node<T> | undefined;
