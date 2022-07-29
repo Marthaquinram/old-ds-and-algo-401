@@ -25,3 +25,5 @@
 - `() => void` is a function with no arguments, and returns nothing.
   <!-- - `'hello'`' is the JavaScript string `'hello'` and no other string. -->
   <!-- - `'hello'|'goodbye'` is either the JavaScript string `'hello'` or the string `'goodbye'`, and no other strings. -->
+
+- Collaborator: Tony Regalado
