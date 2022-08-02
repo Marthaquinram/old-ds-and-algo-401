@@ -102,4 +102,25 @@ export class LinkedList<T> implements Collection<T> {
       tracker = tracker.next;
     }
   }
+
+  kthFromEnd(k: number) {
+    let tracker = this.start;
+    let tally = 0;
+    //this counts the number of nodes in the linked list
+    while (tracker != null) {
+      tracker = tracker.next;
+      tally++;
+    }
+    //this is checking if the value of k is not more than length of the linked list
+    if (tally < k) {
+      throw new Error(
+        "That kth value is more than the values in the linked list."
+      );
+    }
+    tracker = this.start;
+    for (let i = 1; i < length - k + 1; i++) {
+      tracker = tracker?.next;
+    }
+    return tracker?.next;
+  }
 }
