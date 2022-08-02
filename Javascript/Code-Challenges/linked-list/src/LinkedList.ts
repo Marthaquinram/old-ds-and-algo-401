@@ -64,6 +64,16 @@ export class LinkedList<T> implements Collection<T> {
     let found = false; // have you located the node yet?
     while (tracker !== undefined) {
       // if tracker is NOT undefined
+      if (tracker.item === needle && found === false) {
+        // if the node after our current node has a value equal to the value we are looking for and if its true
+        found = true; // set located node equal to true and i think avoids duplicates, so it finds the first one once .
+        let movedNode = tracker;
+        const newNode = {
+          item: value,
+          next: movedNode,
+        };
+        this.start = newNode;
+      }
       if (tracker.next?.item === needle && found === false) {
         // if the node after our current node has a value equal to the value we are looking for and if its true
         found = true; // set located node equal to true and i think avoids duplicates, so it finds the first one once .
