@@ -10,7 +10,7 @@
 - I used the previous code challenges to help me through is. I found a really good resource on [Geeks-for-Geeks] <https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/> for some guidance on where to start. I had a lot of help from other classmates!
 
 ## PR 07
-- 
+- <https://github.com/Marthaquinram/data-structures-and-algorithms-401/pull/10>
 
 ## Collaborator 
 - Tony R.
