@@ -20,6 +20,7 @@ describe("linked list", () => {
     expect(linkListNums.includes(28)).toBe(true);
     expect(linkListNums.includes(45)).toBe(false);
   });
+
   it("the head property will point to the first node in the linked list", () => {
     const linkedList: Collection<string> = new LinkedList<string>();
     linkedList.insert("tail");
@@ -87,6 +88,7 @@ describe("linked list", () => {
     expect(linkList.includes("orange")).toBe(true);
     expect(linkList.includes("my favorite color is purple")).toBe(false);
   });
+
   it("Can properly return a collection of all the values that exist in the linked list", () => {
     const linkList: Collection<string> = new LinkedList<string>();
 
@@ -174,16 +176,59 @@ describe("linked list", () => {
     );
   });
 
-  // it("returns k is greater than the length of the linked list", () => {});
+  // Where k is greater than the length of the linked list
+  it("returns k is greater than the length of the linked list", () => {
+    const listLink: Collection<number> = new LinkedList<number>();
 
-  // it("returns k is greater than the length of the linked list", () => {});
-  // it("returns k is greater than the length of the linked list", () => {});
-  // it("returns k is greater than the length of the linked list", () => {});
-  // it("returns k is greater than the length of the linked list", () => {});
+    listLink.insert(20);
+    listLink.insert(47);
+    listLink.insert(19);
+
+    expect(() => listLink.kthFromEnd(5)).toThrow(
+      "That kth value is more than the values in the linked list."
+    );
+  });
+
+  // // Where k and the length of the list are the same
+  it("returns k and the length of the list are the same", () => {
+    const listLink: Collection<number> = new LinkedList<number>();
+
+    listLink.insert(20);
+    listLink.insert(47);
+    listLink.insert(19);
+    listLink.insert(32);
+    listLink.insert(10);
+
+    expect(listLink.kthFromEnd(5)).toEqual(10);
+  });
+
+  it("returns k is not a positive integer", () => {
+    const listLink: Collection<number> = new LinkedList<number>();
+    listLink.insert(19);
+    listLink.insert(32);
+    listLink.insert(10);
+    expect(() => listLink.kthFromEnd(5)).toThrow(
+      "That kth value is more than the values in the linked list."
+    );
+  });
+
+  it("the linked list is of a size 1", () => {
+    const listLink: Collection<number> = new LinkedList<number>();
+
+    listLink.insert(10);
+
+    expect(listLink.kthFromEnd(1)).toBe(10);
+  });
+
+  it("returns a Happy Path, where k is not at the end, but somewhere in the middle of the linked list", () => {
+    const listLink: Collection<number> = new LinkedList<number>();
+
+    listLink.insert(20);
+    listLink.insert(47);
+    listLink.insert(10);
+    listLink.insert(19);
+    listLink.insert(32);
+
+    expect(listLink.kthFromEnd(3)).toEqual(10);
+  });
 });
-
-// Where k is greater than the length of the linked list
-// Where k and the length of the list are the same
-// Where k is not a positive integer
-// Where the linked list is of a size 1
-// “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
