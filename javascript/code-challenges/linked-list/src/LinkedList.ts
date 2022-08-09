@@ -1,4 +1,5 @@
-import { Collection, display } from "./Collection";
+import { display } from "./Collection";
+import { Collection } from "./Collection";
 
 interface Node<T> {
   item: T;
@@ -6,6 +7,26 @@ interface Node<T> {
 }
 
 export class LinkedList<T> implements Collection<T> {
+  zip(ll1: LinkedList<T>, ll2: LinkedList<T>): LinkedList<T> {
+    throw new Error("Method not implemented.");
+  }
+  static zip<T>(ll1: LinkedList<T>, ll2: LinkedList<T>): LinkedList<T> {
+    const zipped = new LinkedList<T>();
+    let ll1h = ll1.start;
+    let ll2h = ll2.start;
+    while (ll1h || ll2h) {
+      if (ll1h) {
+        zipped.append(ll1h.item);
+        ll1h = ll1h.next;
+      }
+      if (ll2h) {
+        zipped.append(ll2h.item);
+        ll2h = ll2h.next;
+      }
+    }
+    return zipped;
+  }
+
   // TODO
   start: Node<T> | undefined;
   butt: Node<T> | undefined;
@@ -139,4 +160,5 @@ export class LinkedList<T> implements Collection<T> {
     }
     return counter;
   }
+  // zipLists();
 }
