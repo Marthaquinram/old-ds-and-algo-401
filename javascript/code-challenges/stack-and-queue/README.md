@@ -22,3 +22,7 @@ Queues encode traversal and structure together.
 ## Today's Outline
 
 <!-- To Be Completed By Instructor -->
+
+
+### notes
+- still working on this havent completed.
