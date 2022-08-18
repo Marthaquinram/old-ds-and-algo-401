@@ -6,9 +6,12 @@ export class Stack<T> {
     // throw new Error("Not implemented");
   }
 
-  get peek(): T {
-    this.newArr[this.size - 1];
-    throw new Error("Not implemented");
+  get peek(): T | undefined {
+    if (this.newArr.length === 0) {
+      throw new Error("Nothing is in this queue");
+    } else {
+      return this.newArr[this.size - 1];
+    }
   }
 
   push(value: T): void {

@@ -1,30 +1,17 @@
-# Data Structures & Algorithms, Career Coaching
-
-## Learning Objectives
-
-### Data Structure: Stacks & Queues
-
-Arrays allow quick random access. Linked Lists enforce first/next. Stacks and
-Queues encode traversal and structure together.
-
-- Stacks: Last In (push), First Out (pop) (peek)
-- Queues: First In (enqueue), First Out, (dequeue) (peek)
-- JS Array: push, pop, shift, unshift, [0], [length - 1]
-
-- Implement
-- Document
-- Test
-
-### Career Coaching Workshop
-
-<!-- Summary To Be Completed By Instructor -->
-
-## Today's Outline
-
-<!-- To Be Completed By Instructor -->
+# Stacks and Queues
+Using a Linked List as the underlying data storage mechanism, implement both a Stack and a Queue
+    
+## Challenge
+#### Node: 
+  - Create a Node class that has properties for the value stored in the Node, and a pointer to the next node.
+#### Stack
+  - Create a Stack class that has a top property. It creates an empty Stack when instantiated.
+    - This object should be aware of a default empty value assigned to top when the stack is created.
+    - The class should contain the following methods:
 
 
-### notes
-- still working on this havent completed.
+## Approach & Efficiency
+- approached it in an array way instead of LL.
 
-<!-- //test test  -->
+## Collaborators
+- Tony R, Danny C, Sarah T.
