@@ -16,19 +16,58 @@ describe("Stack", () => {
     expect(s.size).toBe(2);
     expect(s.peek).toBe("Sam");
   });
-});
+  it("Can successfully push multiple values onto a stack", () => {
+    const s = new Stack<number>();
 
-// Can successfully push onto a stack
-// Can successfully push multiple values onto a stack
-// Can successfully pop off the stack
-// Can successfully empty a stack after multiple pops
-// Can successfully peek the next item on the stack
-// Can successfully instantiate an empty stack
-// Calling pop or peek on empty stack raises exception
-// Can successfully enqueue into a queue
-// Can successfully enqueue multiple values into a queue
-// Can successfully dequeue out of a queue the expected value
-// Can successfully peek into a queue, seeing the expected value
-// Can successfully empty a queue after multiple dequeues
-// Can successfully instantiate an empty queue
-// Calling dequeue or peek on empty queue raises exception
+    s.push(1);
+    s.push(2);
+    s.push(3);
+
+    expect(s.peek).toBe(3);
+    expect(s.size).toBe(3);
+  });
+
+  it("Can successfully pop off the stack", () => {
+    const s = new Stack<number>();
+
+    s.push(1);
+    s.push(2);
+    s.push(3);
+
+    expect(s.pop()).toBe(3);
+  });
+
+  it("Can successfully empty a stack after multiple pops", () => {
+    const s = new Stack<number>();
+    s.push(1);
+    s.push(2);
+    s.pop();
+    s.pop();
+
+    expect(s.size).toBe(0);
+  });
+
+  it("Can successfully peek the next item on the stack", () => {
+    const s = new Stack<number>();
+    s.push(1);
+    s.push(2);
+    s.push(3);
+
+    expect(s.peek);
+  });
+
+  it("Can successfully instantiate an empty stack", () => {
+    const s = new Stack<number>();
+
+    expect(s.size).toBe(0);
+    expect(s).toBeDefined();
+  });
+
+  it("Calling pop or peek on empty stack raises exception", () => {
+    const s = new Stack<number>();
+    s.push(1);
+    s.pop();
+
+    expect(s.size).toBe(0);
+  });
+});
