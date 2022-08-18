@@ -12,3 +12,4 @@
 - [linked-list-kth](./javascript/code-challenges/linked-list/README-07.md)
 - [linked-list-zip](./javascript/code-challenges/linked-list/README-08.md)
 - [stack-and-queue](./javascript/code-challenges/stack-and-queue/README-10.md)
+- [set-of-stacks](./javascript/code-challenges/set-of-stacks/README-11.md)
