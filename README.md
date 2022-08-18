@@ -9,3 +9,6 @@
 - [Linked-List](./javascript/code-challenges/linked-list/README.md) 
 - [Linked-List-Insertion](./javascript/code-challenges/linked-list/README-06.md)
 - [linked-list-kth](./javascript/code-challenges/linked-list/README-07.md)
+- [linked-list-kth](./javascript/code-challenges/linked-list/README-07.md)
+- [linked-list-zip](./javascript/code-challenges/linked-list/README-08.md)
+- [stack-and-queue](./javascript/code-challenges/stack-and-queue/README-10.md)

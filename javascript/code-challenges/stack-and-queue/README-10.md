@@ -9,6 +9,12 @@ Using a Linked List as the underlying data storage mechanism, implement both a S
     - This object should be aware of a default empty value assigned to top when the stack is created.
     - The class should contain the following methods:
 
+## White Board
+- Still working on whiteboard 
+
+## PR Code Challenge 10
+
+- <https://github.com/Marthaquinram/data-structures-and-algorithms-401/pull/17>
 
 ## Approach & Efficiency
 - approached it in an array way instead of LL.
