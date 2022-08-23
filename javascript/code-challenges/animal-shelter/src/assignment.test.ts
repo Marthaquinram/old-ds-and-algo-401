@@ -1,4 +1,4 @@
-import { Shelter } from "./shelter.ts";
+import { Shelter } from "./shelter";
 
 describe("Animal Shelter", () => {
   it("gets the next cat", () => {
