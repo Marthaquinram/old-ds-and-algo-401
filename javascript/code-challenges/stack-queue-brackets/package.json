@@ -1,0 +1,16 @@
+{
+  "name": "Multi-bracket-Validation.",
+  "version": "0.0.0",
+  "description": "Class 13 linked list solutions",
+  "main": "index.js",
+  "scripts": {
+    "check": "tsc",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3"
+  }
+}
