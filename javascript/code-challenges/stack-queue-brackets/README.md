@@ -19,11 +19,11 @@ Curly Brackets : {}
 
 ## PR Code Challenge 13
 
-- 
+- <https://github.com/Marthaquinram/data-structures-and-algorithms-401/pull/24>
 
 ## Approach & Efficiency
 
-- 
+- Did code challenge review during class, we knew we needed to iterate through a stack and compare values.
 
 ## Collaborators
 
