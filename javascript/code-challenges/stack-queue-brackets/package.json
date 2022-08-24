@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "Multi-bracket-Validation.",
   "version": "0.0.0",
   "description": "Class 13 linked list solutions",
@@ -9,6 +10,13 @@
   },
   "author": "",
   "license": "ISC",
+=======
+  "name": "challenge-13",
+  "description": "Challenge 13: Matched Brackets",
+  "scripts": {
+    "test": "jest"
+  },
+>>>>>>> f1c83b7cd3fb235b86dd344969a5f1a321c55606
   "devDependencies": {
     "@types/jest": "^28.1.6",
     "jest": "^28.1.3"
