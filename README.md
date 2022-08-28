@@ -13,5 +13,6 @@
 - [linked-list-zip](./javascript/code-challenges/linked-list/README-08.md)
 - [stack-and-queue](./javascript/code-challenges/stack-and-queue/README-10.md)
 - [set-of-stacks](./javascript/code-challenges/set-of-stacks/README-11.md)
-- [stack-queue-animal-shelter](./javascript/code-challenges/animal-shelter/README12.md)
-- [stack-queue-brackets](./javascript/code-challenges/stack-queue-brackets/README13.md)
+
+- [trees](./javascript/code-challenges/trees/README15.md)
+
