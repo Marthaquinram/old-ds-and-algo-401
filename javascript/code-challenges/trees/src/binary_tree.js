@@ -61,6 +61,12 @@ class Node {
     }
     return traversal;
   }
+  findMax() {
+
+    if (this.root === undefined) {
+    }
+
+  }
 }
 class BinaryTree {
   constructor(root) {
@@ -76,4 +82,24 @@ class BinaryTree {
 }
 
 
+
 module.exports = { Node, BinaryTree };
+
+
+
+//   findMax(node) {
+//     if (node === undefined)
+//       return Number.MIN_VALUEl
+
+//     let res = node.value;
+//     let leftRes = findMax(node.left);
+//     let rightRes = findMax(node.right);
+
+//     if (leftRes > res)
+//       res = leftRes;
+//     if (rightRes > res)
+//       res = rightRes;
+//     return res;
+//   }
+//   findMax(root)
+// }
