@@ -61,11 +61,21 @@ class Node {
     }
     return traversal;
   }
-  findMax() {
-
-    if (this.root === undefined) {
+  max() {
+    // Post - order: left >> right >> root
+    let traversal = [];
+    traversal.push(this.value); // Root
+    // Right
+    if (this.right) {
+      let rightTraversal = this.right.postOrder();
+      traversal = [...rightTraversal, ...traversal];
     }
-
+    if (this.left) {
+      // Left
+      let leftTraversal = this.left.postOrder();
+      traversal = [...leftTraversal, ...traversal];
+    }
+    return Math.max(...traversal);
   }
 }
 class BinaryTree {
@@ -79,27 +89,9 @@ class BinaryTree {
   }
   inOrder() { return this.root.inOrder(); }
   postOrder() { return this.root.postOrder(); }
+  max() { return this.root.max(); }
 }
 
 
 
 module.exports = { Node, BinaryTree };
-
-
-
-//   findMax(node) {
-//     if (node === undefined)
-//       return Number.MIN_VALUEl
-
-//     let res = node.value;
-//     let leftRes = findMax(node.left);
-//     let rightRes = findMax(node.right);
-
-//     if (leftRes > res)
-//       res = leftRes;
-//     if (rightRes > res)
-//       res = rightRes;
-//     return res;
-//   }
-//   findMax(root)
-// }
