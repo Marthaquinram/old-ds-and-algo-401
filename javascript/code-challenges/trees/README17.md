@@ -14,6 +14,9 @@ NOTE: Traverse the input tree using a Breadth-first approach
 - I had to understand what was happening first and then worked with team to code it and used resources from google.
 Speaking with Tony helped me get a better understanding of how the BST and BT are working, seeing it visually makes sense.
 
+
+## Starting up
+To run the test, do npm test breadth.test.js
 ## Collaborators
 
 - Danny C. and Tony, and Jim.
