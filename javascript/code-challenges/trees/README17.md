@@ -17,6 +17,10 @@ Speaking with Tony helped me get a better understanding of how the BST and BT ar
 
 ## Starting up
 To run the test, do npm test breadth.test.js
+
+## Whiteboard
+- Code Challenge 17 Whiteboard
+![CC17](CodeChallenge%2017.png)
 ## Collaborators
 
 - Danny C. and Tony, and Jim.
