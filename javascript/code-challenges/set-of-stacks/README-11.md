@@ -6,7 +6,7 @@ Imagine a (literal) stack of plates. If the stack gets too high, it might topple
 
 ## White Board
 
-- Still working on whiteboard
+![CC11](./setofstacks.png)
 
 ## PR Code Challenge 11
 
