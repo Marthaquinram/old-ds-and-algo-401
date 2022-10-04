@@ -1,0 +1,22 @@
+{
+  "name": "data-structures-and-algorithms-401",
+  "version": "1.0.0",
+  "description": "# Table of Contents",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marthaquinram/data-structures-and-algorithms-401.git"
+  },
+  "author": "Martha Quintanilla-Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marthaquinram/data-structures-and-algorithms-401/issues"
+  },
+  "homepage": "https://github.com/Marthaquinram/data-structures-and-algorithms-401#readme",
+  "dependencies": {
+    "jest": "^29.1.2"
+  }
+}
