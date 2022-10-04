@@ -16,3 +16,4 @@
 - [stack-queue-animal-shelter](./javascript/code-challenges/animal-shelter/README12.md)
 - [stack-queue-brackets](./javascript/code-challenges/stack-queue-brackets/README13.md)
 - [trees](./javascript/code-challenges/trees/README15.md)
+- [insertionSort](./javascript/code-challenges/insertion-sort/README26.md)
